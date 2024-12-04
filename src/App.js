@@ -50,13 +50,12 @@ const App = () => {
     return (
         <div className="app-container">
             <header className="header-container">
-                <h1 className="header-title glitch" data-text="Hi Dad/Coach/Tenant/Boss">
-                    Hi Dad/Coach/Tenant/Boss
-                </h1>
-                <h2 className="header-subtitle">Here is the Lawsist code!</h2>
-                <p className="header-description">
-                    All these links are private, so enjoy:
-                </p>
+                <h1 className="header-title">Lawsist Dashboard</h1>
+                <p className="header-subtitle">Here are your private links and operations:</p>
+            </header>
+
+            <section className="links-section">
+                <h2 className="section-title">Private Links</h2>
                 <div className="links-container">
                     {privateLinks.map((link) => (
                         <a
@@ -70,7 +69,10 @@ const App = () => {
                         </a>
                     ))}
                 </div>
-                <h3 className="operations-title">Current Order of Operations</h3>
+            </section>
+
+            <section className="operations-section">
+                <h2 className="section-title">Current Order of Operations</h2>
                 <ul className="operations-list">
                     {operations.map((operation, index) => (
                         <li key={index} className="operation-item">
@@ -78,7 +80,8 @@ const App = () => {
                         </li>
                     ))}
                 </ul>
-            </header>
+            </section>
+
             <footer className="footer-container">
                 <p>&copy; {new Date().getFullYear()} Lawsist Automation. All Rights Reserved.</p>
             </footer>
