@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -21,9 +21,9 @@ body {
   padding: 20px;
 }
 
-.header-container {
+.login-container {
   text-align: center;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .header-title {
@@ -32,20 +32,40 @@ body {
   color: #00ffff;
 }
 
-.header-subtitle {
+.login-form {
+  margin-top: 20px;
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
   font-size: 1rem;
-  color: #cccccc;
-  margin-top: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background: #2b2b2b;
+  color: #ffffff;
 }
 
-.section-title {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #00ffff;
-  padding-bottom: 5px;
-  color: #00ffff;
+.login-button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #00ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
 }
 
+.login-button:hover {
+  background: #007b7b;
+  transform: translateY(-3px);
+}
+
+/* Content Styles */
 .links-container {
   display: flex;
   flex-direction: column;
@@ -58,7 +78,7 @@ body {
   text-align: center;
   padding: 10px 15px;
   font-size: 1rem;
-  color: #000000; /* Changed text color to black */
+  color: #000000;
   background: #00ffff;
   text-decoration: none;
   border-radius: 5px;
