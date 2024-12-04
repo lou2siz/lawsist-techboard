@@ -36,7 +36,7 @@ const App = () => {
     const [password, setPassword] = useState("");
 
     const handleLogin = () => {
-        if (email === "eaweinhaus@gmail.com" && password === "18SundayA!") {
+        if (email.toLowerCase() === "eaweinhaus@gmail.com" && password === "18SundayA!") {
             setIsAuthenticated(true);
         } else {
             alert("Invalid username or password");
